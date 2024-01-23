@@ -7,34 +7,34 @@ const College = () => {
           id="contact"
         >
           <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-10">
-            Department
+            OUR COLLEGE
           </h1>
           <div className="px-10">
             <p className="pb-6 text-[20px] text-white">
-              The Department has flourished with XploITs - Explore in IT – a
-              student’s forum in the year 2004 is a platform for the students to
-              enrich their administrative skills and to exhibit their talents by
-              the way of organizing events like symposia, seminar, workshop and
-              conferences, etc.
+              SRM Valliammai Engineering college (An Autonomous Institution) was
+              established on September 9, 1999 and presently conducts 11 Under
+              graduate courses and 8 Post graduate courses. The college has
+              highly qualified, dynamic and dedicated renowned faculty both from
+              academic and industrial background. Besides, the students bring
+              laurels to the college by securing university ranks.
             </p>
             <p className="pb-6 text-[20px] text-white">
-              The Department strives to develop long Term relationships with
-              Industries and market the Student’s Talents effectively. The
-              students are thus being provided high level ‘Leads and Pathways’
-              that will enable them to gain access to a broad range of ‘High
-              Potential’ and ‘Hi-Tech’ Career Opportunities.
+              The SRM Valliammai Engineering College is a part of the SRM Group
+              of Educational Institutions, sponsored by the Valliammai Society.
+              The Valliammai Society was founded by Dr.T.R.Paarivendhar , a
+              well-known educationist, in the name of his mother
+              Tmt.R.Valliammai, under whose care and guidance he attained
+              greater heights in his personal development and whose ideals
+              continue to inspire him. It is approved by AICTE, New Delhi,
+              Accredited by NBA, A ‘Grade Accreditation by NAAC, ISO certified
+              and affiliated to Anna University, Chennai.
             </p>
             <p className="pb-6 text-[20px] text-white">
-              Six numbers of well-equipped Hi-tech laboratories with 217 high
-              end machines with internet connection, Centre of excellence for
-              Graphic and Multimedia and Cyber safety and digital forensics in
-              addition with 3D printing, Well-structured class rooms and
-              laboratories are provided to the students to carry out the
-              experiments. The department has increased the intake of the
-              student’s strength to 120 in the year 2008. A highly qualified
-              team of 14 Faculty members including 5 Doctorates and the Research
-              Expertise in the areas of specialization are disseminated in the
-              department to guide the students to excel in their academic.
+              Our Institute is recognized as SIRO by DST and has been granted by
+              2(f) & 12(b) status by UGC and also centrally funded by FIST of
+              DST and Incubation Centre by MSME, Govt. of India. The objective
+              of the institution is to promote the development and growth of
+              true, effective and efficient Engineering Professional.
             </p>
           </div>
         </div>
