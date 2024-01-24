@@ -18,14 +18,11 @@ const HeroContent = () => {
       className="flex flex-row items-center justify-center mt-40 w-full z-[20]"
     >
       <div className="flex flex-row items-center text-center">
-        <motion.div variants={slideInFromLeft(0.8)}>
-          <Image
-            src={mainLogo}
-            alt="work icons"
-            // height={50%}
-            // width={600}
-            className="w-6/12"
-          />
+        <motion.div
+          variants={slideInFromLeft(0.8)}
+          className="w-full h-full flex justify-center items-center"
+        >
+          <Image src={mainLogo} alt="work icons" height={650} width={650} />
         </motion.div>
 
         <motion.p
