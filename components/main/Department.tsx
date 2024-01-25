@@ -1,7 +1,10 @@
 const Department = () => {
   return (
-    <div className="z-[50] flex justify-center">
-      <div className="border rounded-lg border-[#2A0E61] mt-20 z-20 w-9/12 shadow-2xl">
+    <div className="z-[50] flex justify-center ">
+      <div
+        style={{ fontFamily: "blackPanter" }}
+        className="border rounded-lg border-[#2A0E61] mt-20 z-20 w-9/12 shadow-2xl shadow-[#2A0E61] bg-[#03001417]"
+      >
         <div
           className="flex flex-col items-center justify-center "
           id="contact"
@@ -30,11 +33,14 @@ const Department = () => {
               Graphic and Multimedia and Cyber safety and digital forensics in
               addition with 3D printing, Well-structured class rooms and
               laboratories are provided to the students to carry out the
-              experiments. The department has increased the intake of the
-              student’s strength to 120 in the year 2008. A highly qualified
-              team of 14 Faculty members including 5 Doctorates and the Research
-              Expertise in the areas of specialization are disseminated in the
-              department to guide the students to excel in their academic.
+              experiments.
+            </p>
+            <p className="pb-6 text-[20px] text-white">
+              The department has increased the intake of the student’s strength
+              to 120 in the year 2008. A highly qualified team of 14 Faculty
+              members including 5 Doctorates and the Research Expertise in the
+              areas of specialization are disseminated in the department to
+              guide the students to excel in their academic.
             </p>
           </div>
         </div>
