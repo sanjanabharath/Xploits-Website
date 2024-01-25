@@ -5,6 +5,7 @@ import Contact from "@/components/main/Contact";
 import ImageSlider from "@/components/main/ImageSlider";
 import Department from "@/components/main/Department";
 import College from "@/components/main/College";
+import Conveners from "@/components/main/Conveners";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
           <ImageSlider />
 
           <Team />
+          <Conveners />
 
           <Contact />
         </div>
