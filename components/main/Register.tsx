@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { TextField, Typography } from "@mui/material";
 import "./register.css";
-
+import Link from "next/link";
 const Register = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -41,6 +41,7 @@ const Register = () => {
           <label className="block text-sm font-medium leading-6 text-white ">
             Name
           </label>
+
           <div className="mt-2">
             <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
               <input
@@ -187,7 +188,12 @@ const Register = () => {
               </div>
               <div className="text-sm leading-6">
                 <label className="font-medium text-white">
-                  Paper Presentation
+                  Paper Presentation -{" "}
+                  <a className="text-indigo-600">
+                    <Link href="/paperpresentation">
+                      Click here for details
+                    </Link>
+                  </a>
                 </label>
               </div>
             </div>
@@ -201,7 +207,12 @@ const Register = () => {
                 />
               </div>
               <div className="text-sm leading-6">
-                <label className="font-medium text-white">Mysticode</label>
+                <label className="font-medium text-white">
+                  Mysticode -{" "}
+                  <a className="text-indigo-600">
+                    <Link href="/mysticode">Click here for details</Link>
+                  </a>
+                </label>
               </div>
             </div>
             <div className="relative flex gap-x-3">
@@ -214,7 +225,12 @@ const Register = () => {
                 />
               </div>
               <div className="text-sm leading-6">
-                <label className="font-medium text-white">Res-Q Ventures</label>
+                <label className="font-medium text-white">
+                  Res-Q Ventures -{" "}
+                  <a className="text-indigo-600">
+                    <Link href="/resqventure">Click here for details</Link>
+                  </a>
+                </label>
               </div>
             </div>
             <div className="relative flex gap-x-3">
@@ -227,7 +243,12 @@ const Register = () => {
                 />
               </div>
               <div className="text-sm leading-6">
-                <label className="font-medium text-white">Sherlock</label>
+                <label className="font-medium text-white">
+                  Sherlock -{" "}
+                  <a className="text-indigo-600">
+                    <Link href="/sherlock">Click here for details</Link>
+                  </a>
+                </label>
               </div>
             </div>
             <div className="relative flex gap-x-3">
@@ -240,7 +261,12 @@ const Register = () => {
                 />
               </div>
               <div className="text-sm leading-6">
-                <label className="font-medium text-white">Box Cricket</label>
+                <label className="font-medium text-white">
+                  Box Cricket -{" "}
+                  <a className="text-indigo-600">
+                    <Link href="/boxcricket">Click here for details</Link>
+                  </a>
+                </label>
               </div>
             </div>
           </div>

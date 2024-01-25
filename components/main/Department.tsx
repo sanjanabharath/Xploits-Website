@@ -1,6 +1,6 @@
 const Department = () => {
   return (
-    <div className="z-[50] flex justify-center ">
+    <div className="flex justify-center ">
       <div
         style={{ fontFamily: "blackPanter" }}
         className="border rounded-lg border-[#2A0E61] mt-20 z-20 w-9/12 shadow-2xl shadow-[#2A0E61] bg-[#03001417]"

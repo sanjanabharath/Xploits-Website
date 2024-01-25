@@ -15,7 +15,7 @@ const Contact = () => {
         </h1>
       </div>
 
-      <div className="flex justify-between px-20 pb-10">
+      <div className="flex flex-col justify-between md:flex-row px-20 pb-10">
         <div className="">
           <h1 className="text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-8">
             Did we miss anything?
@@ -57,6 +57,7 @@ const Contact = () => {
           height="450"
           style={{ border: "0px", borderRadius: "25px" }}
           loading="lazy"
+          className="mt-16 md:mt-0"
         ></iframe>
       </div>
     </div>

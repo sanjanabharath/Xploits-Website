@@ -13,9 +13,9 @@ const Card = ({ src, title, description }: Props) => {
       <Image
         src={src}
         alt={title}
-        width={1000}
-        height={1000}
-        className="w-full object-contain"
+        width={400}
+        height={400}
+        className="object-contain"
       />
 
       <div className="relative p-4">

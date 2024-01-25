@@ -5,6 +5,7 @@ import Contact from "@/components/main/Contact";
 import ImageSlider from "@/components/main/ImageSlider";
 import Department from "@/components/main/Department";
 import College from "@/components/main/College";
+import Team2 from "@/components/main/Team2";
 import Conveners from "@/components/main/Conveners";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
           <ImageSlider />
 
           <Team />
+          <Team2 />
           <Conveners />
 
           <Contact />
