@@ -17,19 +17,23 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center mt-20 w-full z-[20]"
+      className="flex flex-col md:flex-row items-center mt-20 w-full z-[20]"
     >
-      <div className="flex flex-row items-center text-center">
+      <div className="flex flex-col md:flex-row items-center text-center">
         <motion.div
           variants={slideInFromLeft(1)}
-          className="w-full h-full flex justify-items-start items-center"
+          className="w-full h-full flex justify-center md:justify-items-start items-center"
         >
-          <Image src={mainLogo} alt="work icons" height={650} width={650} />
+          <Image
+            src={mainLogo}
+            alt="work icons"
+            className="w-[540px] md:w-[700px]"
+          />
         </motion.div>
 
-        <motion.p
+        <motion.div
           variants={slideInFromRight(0.8)}
-          className="text-lg text-gray-400 my-5 max-w-[600px]"
+          className="text-lg text-gray-400 my-5 max-w-[600px] mx-20"
         >
           <motion.div
             variants={slideInFromLeft(0.5)}
@@ -46,8 +50,8 @@ const HeroContent = () => {
 
           <Countdown />
           <motion.div
-            variants={slideInFromLeft(0.5)}
-            className=" mt-3 font-bold text-white w-auto h-auto"
+            variants={slideInFromRight(0.5)}
+            className="flex-col mt-10 font-bold text-white w-auto h-auto"
           >
             <DailogBox />
             <motion.a
@@ -58,7 +62,7 @@ const HeroContent = () => {
               Explore More!
             </motion.a>
           </motion.div>
-        </motion.p>
+        </motion.div>
       </div>
     </motion.div>
   );

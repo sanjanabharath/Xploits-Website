@@ -5,7 +5,6 @@ import Contact from "@/components/main/Contact";
 import ImageSlider from "@/components/main/ImageSlider";
 import Department from "@/components/main/Department";
 import College from "@/components/main/College";
-import Image from "next/image";
 
 export default function Home() {
   return (

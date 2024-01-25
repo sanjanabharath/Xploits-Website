@@ -14,7 +14,7 @@ const Register = () => {
   return (
     <div
       style={{
-        background: "#120130",
+        background: "black",
         padding: "40px",
         width: "600px",
       }}

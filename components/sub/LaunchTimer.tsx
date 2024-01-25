@@ -52,7 +52,7 @@ const LaunchTimer: React.FC<LaunchTimerProps> = ({ launchDate }) => {
   }, []);
 
   return (
-    <div>
+    <div suppressHydrationWarning>
       <div className="container">
         <div className="container-segment">
           <div className="segment-title">Days</div>
