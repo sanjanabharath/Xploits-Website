@@ -51,14 +51,17 @@ const Contact = () => {
             </p>
           </div>
         </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.2681026238643!2d80.03873787496569!3d12.825944187476196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f70d79722631%3A0x49afcd4648f94894!2sSRM%20Valliammai%20Engineering%20College!5e0!3m2!1sen!2sin!4v1705665111772!5m2!1sen!2sin"
-          width="600"
-          height="450"
-          style={{ border: "0px", borderRadius: "25px" }}
-          loading="lazy"
-          className="mt-16 md:mt-0"
-        ></iframe>
+        \
+        <div className="flex justify-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.2681026238643!2d80.03873787496569!3d12.825944187476196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f70d79722631%3A0x49afcd4648f94894!2sSRM%20Valliammai%20Engineering%20College!5e0!3m2!1sen!2sin!4v1705665111772!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style={{ border: "0px", borderRadius: "25px" }}
+            loading="lazy"
+            className="mt-16 md:mt-0"
+          ></iframe>
+        </div>
       </div>
     </div>
   );
