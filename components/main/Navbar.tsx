@@ -1,21 +1,28 @@
-import React from "react";
-import college from "../assets/veclogo.png";
+"use client";
+import React, { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
-    <div className="w-full h-[65px] fixed top-0  backdrop-blur-md z-[50] px-10">
+    <div className="w-full h-[85px] fixed top-0  backdrop-blur-md z-[50] px-10">
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[5px]">
-        <a href="#home" className="h-auto w-auto flex flex-row items-center">
+        <a href="#home" className="h-auto w-auto flex items-center">
           <span className="flex justify-center">
             <img
               src="/veclogo.png"
               alt="college logo"
-              className="w-[700px] mt-20"
+              className="w-[600px] mt-10"
             />
           </span>
         </a>
 
-        <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
+        <div className="hidden md:flex w-[500px] items-center justify-between md:mr-20">
           <div className="flex items-center justify-between w-full h-auto border-0 bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
             <a href="#home" className="cursor-pointer">
               Home
@@ -23,13 +30,49 @@ const Navbar = () => {
             <a href="#events" className="cursor-pointer">
               Events
             </a>
-
             <a href="#contact" className="cursor-pointer">
               Contact Us
             </a>
           </div>
         </div>
+
+        {/* Mobile Menu Button */}
+        <div className="mt-8 md:hidden">
+          <button onClick={toggleMobileMenu}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              className="h-10 w-10 text-white"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
+
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden w-full mt-4">
+          <div className="flex flex-col items-center bg-[#0300145e] rounded-md text-gray-200">
+            <a href="#home" className="py-2">
+              Home
+            </a>
+            <a href="#events" className="py-2">
+              Events
+            </a>
+            <a href="#contact" className="py-2">
+              Contact Us
+            </a>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

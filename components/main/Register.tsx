@@ -1,10 +1,21 @@
 import { useState } from "react";
 import { TextField, Typography } from "@mui/material";
 import "./register.css";
+import Alert from "@mui/material/Alert";
+import CheckIcon from "@mui/icons-material/Check";
 import Link from "next/link";
 const Register = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [showAlert, setShowAlert] = useState(false);
+
+  const handleButtonClick = () => {
+    setShowAlert(true);
+  };
+
+  const handleCloseAlert = () => {
+    setShowAlert(false);
+  };
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -21,10 +32,10 @@ const Register = () => {
       id="mainDiv"
     >
       <form
-        id="gform"
-        action="https://docs.google.com/forms/d/e/1FAIpQLSdJOr3XdwaIOGaczotAMMpuztn70gyMXMmFj6rlDhCSvQX21A/formResponse"
-        method="post"
-        target="hidden_iframe"
+        id="mG61Hd"
+        action="https://docs.google.com/forms/u/7/d/1gUhYZMKh-GG0VjwSm4k0o8ml2u2zxIT7Zt2-LSdKTYY/prefill"
+        method="POST"
+        target="_self"
         onSubmit={(event) => {
           handleSubmit(event);
           setFormSubmitted(true);
@@ -46,7 +57,7 @@ const Register = () => {
             <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
               <input
                 type="text"
-                name="username"
+                name="entry.1803027154"
                 id="username"
                 className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                 placeholder="Enter your name"
@@ -62,7 +73,7 @@ const Register = () => {
             <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
               <input
                 type="text"
-                name="username"
+                name="entry.900645420"
                 id="username"
                 className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                 placeholder="Enter your email"
@@ -78,7 +89,7 @@ const Register = () => {
             <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
               <input
                 type="text"
-                name="username"
+                name="entry.1285232124"
                 id="username"
                 className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                 placeholder="Enter your phone number"
@@ -94,7 +105,7 @@ const Register = () => {
             <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
               <input
                 type="text"
-                name="username"
+                name="entry.915629482"
                 id="username"
                 className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                 placeholder="Enter your college name"
@@ -110,7 +121,7 @@ const Register = () => {
             <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
               <input
                 type="text"
-                name="username"
+                name="entry.153855153"
                 id="username"
                 className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                 placeholder="Enter your department"
@@ -127,7 +138,7 @@ const Register = () => {
             <div className="flex items-center gap-x-3">
               <input
                 id="push-everything"
-                name="push-notifications"
+                name="entry.164361115"
                 type="radio"
                 className="h-4 w-4 border-[#2A0E61] shadow-[#2A0E61] text-indigo-600 focus:ring-indigo-600"
               />
@@ -138,7 +149,7 @@ const Register = () => {
             <div className="flex items-center gap-x-3">
               <input
                 id="push-email"
-                name="push-notifications"
+                name="entry.164361115"
                 type="radio"
                 className="h-4 w-4 border-[#2A0E61] shadow-[#2A0E61] text-indigo-600 focus:ring-indigo-600"
               />
@@ -149,7 +160,7 @@ const Register = () => {
             <div className="flex items-center gap-x-3">
               <input
                 id="push-nothing"
-                name="push-notifications"
+                name="entry.164361115"
                 type="radio"
                 className="h-4 w-4 border-[#2A0E61] text-indigo-600 shadow-[#2A0E61] focus:ring-indigo-600"
               />
@@ -160,7 +171,7 @@ const Register = () => {
             <div className="flex items-center gap-x-3">
               <input
                 id="push-nothing"
-                name="push-notifications"
+                name="entry.164361115"
                 type="radio"
                 className="h-4 w-4 border-[#2A0E61] shadow-[#2A0E61] text-indigo-600 focus:ring-indigo-600"
               />
@@ -181,7 +192,7 @@ const Register = () => {
               <div className="flex h-6 items-center">
                 <input
                   id="comments"
-                  name="comments"
+                  name="entry.683230345"
                   type="checkbox"
                   className="h-4 w-4 rounded border-[#2A0E61] shadow-[#2A0E61] text-indigo-600 focus:ring-indigo-600"
                 />
@@ -201,7 +212,7 @@ const Register = () => {
               <div className="flex h-6 items-center">
                 <input
                   id="candidates"
-                  name="candidates"
+                  name="entry.683230345"
                   type="checkbox"
                   className="h-4 w-4 rounded shadow-[#2A0E61] border-[#2A0E61] text-indigo-600 focus:ring-indigo-600"
                 />
@@ -219,7 +230,7 @@ const Register = () => {
               <div className="flex h-6 items-center">
                 <input
                   id="offers"
-                  name="offers"
+                  name="entry.683230345"
                   type="checkbox"
                   className="h-4 w-4 rounded shadow-[#2A0E61] border-[#2A0E61] text-indigo-600 focus:ring-indigo-600"
                 />
@@ -237,7 +248,7 @@ const Register = () => {
               <div className="flex h-6 items-center">
                 <input
                   id="offers"
-                  name="offers"
+                  name="entry.683230345"
                   type="checkbox"
                   className="h-4 w-4 rounded shadow-[#2A0E61] border-[#2A0E61] text-indigo-600 focus:ring-indigo-600"
                 />
@@ -255,7 +266,7 @@ const Register = () => {
               <div className="flex h-6 items-center">
                 <input
                   id="offers"
-                  name="offers"
+                  name="entry.683230345"
                   type="checkbox"
                   className="h-4 w-4 rounded border-[#2A0E61] text-indigo-600 focus:ring-indigo-600"
                 />
@@ -271,10 +282,38 @@ const Register = () => {
             </div>
           </div>
         </fieldset>
+        <fieldset>
+          <legend className="text-lg font-semibold leading-6 text-white pt-8">
+            The registration fees (Rs. 150) should be paid in college
+          </legend>
+          <div className="flex items-center gap-x-3 mt-3">
+            <input
+              id="push-nothing"
+              name="entry.44926428"
+              type="radio"
+              className="h-4 w-4 border-[#2A0E61] text-indigo-600 shadow-[#2A0E61] focus:ring-indigo-600"
+            />
+            <label className="block text-sm font-medium leading-6 text-white ">
+              Sure
+            </label>
+          </div>
+        </fieldset>
+
+        {showAlert && (
+          <Alert
+            icon={<CheckIcon fontSize="inherit" />}
+            severity="success"
+            onClose={handleCloseAlert}
+            className="mt-5"
+          >
+            Your submission was successful.
+          </Alert>
+        )}
         <button
           type="submit"
           className="sub text-white button-primary rounded-lg p-2 mt-7 text-2xl"
           value="submit"
+          onClick={handleButtonClick}
         >
           Submit
         </button>

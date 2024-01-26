@@ -1,43 +1,53 @@
 "use client";
 
-import Image from "next/image";
+import React, { useState } from "react";
+import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper";
+import "./Carousel.css";
 
-import { images } from "@/lib/images";
+const Team2 = ({ data }) => {
+  const [slide, setSlide] = useState(0);
 
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
+  const nextSlide = () => {
+    setSlide(slide === data.length - 1 ? 0 : slide + 1);
+  };
 
-export default function Page() {
+  const prevSlide = () => {
+    setSlide(slide === 0 ? data.length - 1 : slide - 1);
+  };
+
   return (
-    <div className="sm:hidden flex">
-      <section className="py-12">
-        <div className="container">
-          {/* <Swiper
-            navigation
-            pagination={{ type: "fraction" }}
-            //@ts-ignore
-            modules={[Navigation, Pagination]}
-            onSwiper={(swiper) => console.log(swiper)}
-            className="h-96 w-full rounded-lg"
-          >
-            {images.map((image, index) => (
-              <SwiperSlide key={index}>
-                <div className="flex h-full w-full items-center justify-center">
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    className="block h-full w-full object-cover"
-                  />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper> */}
-        </div>
-      </section>
+    <div className="carousel">
+      <BsArrowLeftCircleFill onClick={prevSlide} className="arrow arrow-left" />
+      {data.map((item, idx) => {
+        return (
+          <img
+            src={item.src}
+            alt={item.alt}
+            key={idx}
+            className={slide === idx ? "slide" : "slide slide-hidden"}
+          />
+        );
+      })}
+      <BsArrowRightCircleFill
+        onClick={nextSlide}
+        className="arrow arrow-right"
+      />
+      <span className="indicators">
+        {data.map((_, idx) => {
+          return (
+            <button
+              key={idx}
+              className={
+                slide === idx ? "indicator" : "indicator indicator-inactive"
+              }
+              onClick={() => setSlide(idx)}
+            ></button>
+          );
+        })}
+      </span>
     </div>
   );
-}
+};
+
+export default Team2;
