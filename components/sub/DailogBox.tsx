@@ -9,7 +9,7 @@ import Slide from "@mui/material/Slide";
 import { motion } from "framer-motion";
 import { TransitionProps } from "@mui/material/transitions";
 import { slideInFromLeft } from "@/utils/motion";
-import Register from "../main/Register";
+import Registeration from "../main/Register";
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -35,7 +35,7 @@ export default function AlertDialogSlide() {
     <React.Fragment>
       <motion.a
         variants={slideInFromLeft(1)}
-        onClick={handleClickOpen}
+        href="http://tinyurl.com/xploits24"
         className="p-3 button-primary text-center text-white cursor-pointer rounded-lg max-w-[400px] mx-3 mt-10"
       >
         Register
@@ -48,7 +48,13 @@ export default function AlertDialogSlide() {
         onClose={handleClose}
         aria-describedby="alert-dialog-slide-description"
       >
-        <Register />
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSdtdxgclUq1TzbMIDi4EeG0xGucFManUtlrkOJl7s51xCJkGw/viewform?embedded=true"
+          width="670"
+          height="4035"
+        >
+          Loading…
+        </iframe>
       </Dialog>
     </React.Fragment>
   );

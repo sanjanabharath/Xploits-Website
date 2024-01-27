@@ -6,7 +6,7 @@ import CheckIcon from "@mui/icons-material/Check";
 import Link from "next/link";
 const Register = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [formSubmitted, setFormSubmitted] = useState(false);
+
   const [showAlert, setShowAlert] = useState(false);
 
   const handleButtonClick = () => {
@@ -33,14 +33,11 @@ const Register = () => {
     >
       <form
         id="mG61Hd"
-        action="https://docs.google.com/forms/u/7/d/1gUhYZMKh-GG0VjwSm4k0o8ml2u2zxIT7Zt2-LSdKTYY/prefill"
+        action="https://docs.google.com/forms/u/7/d/e/1FAIpQLSdtdxgclUq1TzbMIDi4EeG0xGucFManUtlrkOJl7s51xCJkGw/formResponse"
         method="POST"
+        onSubmit={handleSubmit}
         target="_self"
-        onSubmit={(event) => {
-          handleSubmit(event);
-          setFormSubmitted(true);
-        }}
-        autoComplete="new-password"
+        autoComplete="false"
       >
         <div className="flex justify-center">
           <Typography variant="h3" className="text-white font-extrabold py-4">
