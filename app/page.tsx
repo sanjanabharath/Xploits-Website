@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <main className="h-full w-full">
-        <div className="flex flex-col justify-center">
+      <main className="h-full w-full overflow-x-hidden">
+        <div className="flex flex-col justify-center items-center">
           <Hero />
           <Department />
           <College />

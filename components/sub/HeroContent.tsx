@@ -17,9 +17,9 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-col md:flex-row items-center mt-20 w-full z-[20]"
+      className="flex flex-col justify-center md:flex-row items-center mt-20 w-full z-[20]"
     >
-      <div className="flex flex-col md:flex-row items-center text-center">
+      <div className="flex flex-col justify-center md:flex-row items-center text-center">
         <Image
           src={mainLogo}
           alt="work icons"
@@ -27,17 +27,14 @@ const HeroContent = () => {
         />
 
         <motion.div className="text-lg text-gray-400 my-5 mx-20 flex flex-col">
-          <motion.div
-            variants={slideInFromRight(1)}
-            className="w-full h-full flex justify-center md:justify-items-start items-center"
-          >
-            <Image
+          <div className="max-w-screen-lg mx-auto">
+            <img
               src="/xploits.png"
-              alt="work icons"
-              width={1480}
-              height={1480}
+              alt="xploits logo"
+              className="w-96 md:w-full h-auto"
             />
-          </motion.div>
+          </div>
+
           <motion.div
             variants={slideInFromLeft(0.5)}
             className="gap-6 mt-6 text-2xl font-bold text-white max-w-[600px] w-auto h-auto "
@@ -59,7 +56,7 @@ const HeroContent = () => {
               className="p-3 button-primary text-center text-white cursor-pointer rounded-lg max-w-[400px] mx-3"
               href="#events"
             >
-              Explore More!
+              Events!
             </motion.a>
           </motion.div>
         </motion.div>
