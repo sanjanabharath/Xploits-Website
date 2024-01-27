@@ -13,7 +13,7 @@ const Countdown = () => {
     <div>
       <motion.div
         variants={slideInFromLeft(0.5)}
-        className="flex flex-col gap-6 mt-10 text-6xl font-bold text-white w-48 md:w-full  h-auto mx-5"
+        className="flex gap-6 mt-10 text-3xl font-bold text-white container mx-auto sm:max-w-screen-sm md:max-w-screen-md md:text-6xl lg:max-w-screen-lg xl:max-w-screen-xl"
       >
         <LaunchTimer launchDate={launchDate} />
       </motion.div>

@@ -73,7 +73,7 @@ const Team2 = () => {
   return (
     <div className="flex justify-center ">
       <div
-        className="flex flex-col items-center justify-center h-full my-40"
+        className="flex flex-col items-center justify-center h-full my-40 mx-20"
         id="contact"
       >
         <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-10">

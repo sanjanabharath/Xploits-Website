@@ -10,7 +10,7 @@ const College = () => {
             style={{ fontFamily: "blackPanter" }}
             className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-10"
           >
-            OUR COLLEGE
+            COLLEGE
           </h1>
           <div className="px-10">
             <p className="pb-6 text-[20px] text-white">

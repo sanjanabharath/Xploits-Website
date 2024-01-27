@@ -52,43 +52,41 @@ const LaunchTimer: React.FC<LaunchTimerProps> = ({ launchDate }) => {
   }, []);
 
   return (
-    <div className="container mx-auto sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
-      <div className="container">
-        <div className="container-segment">
-          <div className="segment-title">Days</div>
-          <div className="segment">
-            <div className="flip-card">
-              <div className="top">{timeRemaining.days}</div>
-              <div className="bottom">{timeRemaining.days}</div>
-            </div>
+    <div className="container">
+      <div className="container-segment">
+        <div className="segment-title">Days</div>
+        <div className="segment">
+          <div className="flip-card">
+            <div className="top">{timeRemaining.days}</div>
+            <div className="bottom">{timeRemaining.days}</div>
           </div>
         </div>
+      </div>
 
-        <div className="container-segment">
-          <div className="segment-title">Hours</div>
-          <div className="segment">
-            <div className="flip-card">
-              <div className="top">{timeRemaining.hours}</div>
-              <div className="bottom">{timeRemaining.hours}</div>
-            </div>
+      <div className="container-segment">
+        <div className="segment-title">Hours</div>
+        <div className="segment">
+          <div className="flip-card">
+            <div className="top">{timeRemaining.hours}</div>
+            <div className="bottom">{timeRemaining.hours}</div>
           </div>
         </div>
-        <div className="container-segment">
-          <div className="segment-title">Minutes</div>
-          <div className="segment">
-            <div className="flip-card">
-              <div className="top">{timeRemaining.minutes}</div>
-              <div className="bottom">{timeRemaining.minutes}</div>
-            </div>
+      </div>
+      <div className="container-segment">
+        <div className="segment-title">Minutes</div>
+        <div className="segment">
+          <div className="flip-card">
+            <div className="top">{timeRemaining.minutes}</div>
+            <div className="bottom">{timeRemaining.minutes}</div>
           </div>
         </div>
-        <div className="container-segment">
-          <div className="segment-title">Seconds</div>
-          <div className="segment">
-            <div className="flip-card">
-              <div className="top">{timeRemaining.seconds}</div>
-              <div className="bottom">{timeRemaining.seconds}</div>
-            </div>
+      </div>
+      <div className="container-segment">
+        <div className="segment-title">Seconds</div>
+        <div className="segment">
+          <div className="flip-card">
+            <div className="top">{timeRemaining.seconds}</div>
+            <div className="bottom">{timeRemaining.seconds}</div>
           </div>
         </div>
       </div>
