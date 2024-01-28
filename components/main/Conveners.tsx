@@ -11,9 +11,6 @@ const College = () => {
             <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 pt-10">
               SPECIAL THANKS
             </h1>
-            <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-5">
-              TO OUR CONVENERS
-            </h1>
           </div>
 
           <div className=" flex flex-col md:flex-row justify-center">
