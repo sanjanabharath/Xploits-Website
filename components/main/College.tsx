@@ -2,17 +2,14 @@ const College = () => {
   return (
     <div className="flex justify-center">
       <div className="border rounded-lg border-[#2A0E61] mt-20 z-20 w-9/12 shadow-2xl shadow-[#2A0E61] bg-[#03001417]">
-        <div
-          className="flex flex-col items-center justify-center "
-          id="contact"
-        >
+        <div className="flex flex-col items-center justify-center ">
           <h1
             style={{ fontFamily: "blackPanter" }}
             className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-10"
           >
             COLLEGE
           </h1>
-          <div className="px-10">
+          <div className="px-10 text-center">
             <p className="pb-6 text-[20px] text-white">
               SRM Valliammai Engineering college (An Autonomous Institution) was
               established on September 9, 1999 and presently conducts 11 Under

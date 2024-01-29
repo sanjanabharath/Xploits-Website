@@ -61,11 +61,11 @@ const ImageSlider = () => {
           key={index}
           src={image.src}
           alt={image.src}
-          className="rounded-[12px] cursor-pointer border-0 z-20"
+          className="rounded-[12px] cursor-pointer border-0 z-20 w-96"
           animate={positions[positionIndexes[index]]}
           variants={imageVariants}
           transition={{ duration: 0.2 }}
-          style={{ width: "28%", position: "absolute" }}
+          style={{ position: "absolute" }}
           whileHover={{
             filter: "brightness(70%)",
             scale: 1.1,
@@ -79,13 +79,13 @@ const ImageSlider = () => {
       ))}
       <div className="flex flex-row gap-3 ">
         <button
-          className="text-white mt-[600px] cursor-pointer rounded-lg z-20 button-primary py-2 px-4 "
+          className="text-white text-lg font-bold mt-[600px] cursor-pointer rounded-lg z-20 button-primary py-3 px-4 "
           onClick={handleBack}
         >
           Back
         </button>
         <button
-          className="text-white mt-[600px] cursor-pointer rounded-lg z-20 button-primary py-2 px-4 "
+          className="text-white text-lg font-bold mt-[600px] cursor-pointer rounded-lg z-20 button-primary py-3 px-4 "
           onClick={handleNext}
         >
           Next
