@@ -9,7 +9,6 @@ import Slide from "@mui/material/Slide";
 import { motion } from "framer-motion";
 import { TransitionProps } from "@mui/material/transitions";
 import { slideInFromLeft } from "@/utils/motion";
-import Registeration from "../main/Register";
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {

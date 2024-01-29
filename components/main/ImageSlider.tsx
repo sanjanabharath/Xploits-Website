@@ -52,44 +52,46 @@ const ImageSlider = () => {
     right1: { x: "50%", scale: 0.7, zIndex: 3 },
   };
   return (
-    <div
-      className="flex items-center flex-col justify-center h-screen z-20"
-      id="events"
-    >
-      {images.map((image, index) => (
-        <motion.img
-          key={index}
-          src={image.src}
-          alt={image.src}
-          className="rounded-[12px] cursor-pointer border-0 z-20 w-96"
-          animate={positions[positionIndexes[index]]}
-          variants={imageVariants}
-          transition={{ duration: 0.2 }}
-          style={{ position: "absolute" }}
-          whileHover={{
-            filter: "brightness(70%)",
-            scale: 1.1,
-            cursor: "pointer",
-          }}
-          onClick={() => {
-            const a = `/${tag[index]}`;
-            router.push(`${a}`);
-          }}
-        />
-      ))}
-      <div className="flex flex-row gap-3 ">
-        <button
-          className="text-white text-lg font-bold mt-[600px] cursor-pointer rounded-lg z-20 button-primary py-3 px-4 "
-          onClick={handleBack}
-        >
-          Back
-        </button>
-        <button
-          className="text-white text-lg font-bold mt-[600px] cursor-pointer rounded-lg z-20 button-primary py-3 px-4 "
-          onClick={handleNext}
-        >
-          Next
-        </button>
+    <div>
+      <div
+        className="flex items-center flex-col justify-center h-screen z-20"
+        id="events"
+      >
+        {images.map((image, index) => (
+          <motion.img
+            key={index}
+            src={image.src}
+            alt={image.src}
+            className="rounded-[12px] cursor-pointer border-0 z-20"
+            animate={positions[positionIndexes[index]]}
+            variants={imageVariants}
+            transition={{ duration: 0.2 }}
+            style={{ position: "absolute", width: "650px" }}
+            whileHover={{
+              filter: "brightness(70%)",
+              scale: 1.1,
+              cursor: "pointer",
+            }}
+            onClick={() => {
+              const a = `/${tag[index]}`;
+              router.push(`${a}`);
+            }}
+          />
+        ))}
+        <div className="flex flex-row">
+          <button
+            className="text-white text-lg font-bold mt-[600px] cursor-pointer rounded-lg z-20 button-primary py-3 px-4 mx-6"
+            onClick={handleBack}
+          >
+            Back
+          </button>
+          <button
+            className="text-white text-lg font-bold mt-[600px] cursor-pointer rounded-lg z-20 button-primary py-3 px-4 mx-8"
+            onClick={handleNext}
+          >
+            Next
+          </button>
+        </div>
       </div>
     </div>
   );

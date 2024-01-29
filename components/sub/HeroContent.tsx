@@ -19,7 +19,10 @@ const HeroContent = () => {
       animate="visible"
       className="flex flex-col justify-center md:flex-row items-center mt-20 w-full z-[20]"
     >
-      <div className="flex flex-col justify-center md:flex-row items-center text-center">
+      <div
+        className="flex flex-col justify-center md:flex-row items-center text-center"
+        suppressHydrationWarning
+      >
         <Image
           src={mainLogo}
           alt="work icons"
