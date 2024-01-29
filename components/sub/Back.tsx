@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { useRouter } from "next/navigation";
 
@@ -6,7 +8,7 @@ const Back = () => {
   return (
     <div>
       <button
-        className="text-white text-lg font-bold mt-[600px] cursor-pointer rounded-lg z-20 button-primary py-3 px-4 mx-6"
+        className="text-white text-lg font-bold cursor-pointer rounded-lg z-20 button-primary py-3 px-4 m-6 w-36"
         onClick={() => {
           router.push("/");
         }}

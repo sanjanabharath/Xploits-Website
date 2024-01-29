@@ -4,17 +4,22 @@ import Grid from "@mui/material/Grid";
 import { IoIosCall, IoIosMail } from "react-icons/io";
 import three from "../../components/assets/event-5.png";
 import { useRouter } from "next/router";
+import Back from "../../components/sub/Back";
 const Paper = () => {
   return (
     <div className="z-[50] flex justify-center">
       <div className="border rounded-lg border-[#2A0E61] mt-20 z-20 w-9/12">
-        <Image
-          src={three}
-          alt="resq"
-          width={400}
-          height={400}
-          className="m-20 md:m-10 rounded-lg w-11/12"
-        />
+        <Back />
+        <div className="flex justify-center">
+          {" "}
+          <Image
+            src={three}
+            alt="box cricket"
+            width={400}
+            height={400}
+            className="m-20 md:m-10 rounded-lg w-11/12"
+          />
+        </div>
 
         <div className="m-10 md:m-5 md:mt-15">
           <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 ">
