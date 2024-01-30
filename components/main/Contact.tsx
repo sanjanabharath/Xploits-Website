@@ -40,7 +40,7 @@ const Contact = () => {
 
           <div className="flex items-center">
             <IoIosMail style={{ color: "white", fontSize: "24px" }} />
-            <p className="text-white text-lg ml-4">xploitsventura@gmail.com</p>
+            <p className="text-white text-lg ml-4">xploits2k24@gmail.com</p>
           </div>
         </div>
 

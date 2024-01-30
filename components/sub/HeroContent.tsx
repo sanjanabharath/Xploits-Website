@@ -39,13 +39,15 @@ const HeroContent = () => {
           </div>
 
           <motion.div
-            variants={slideInFromLeft(0.5)}
-            className="gap-6 mt-6 text-2xl font-bold text-white max-w-[600px] w-auto h-auto "
+            variants={slideInFromRight(0.5)}
+            className="gap-6 mt-6 text-2xl  text-white max-w-[600px] w-auto h-auto "
           >
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r font-bold from-purple-500 to-cyan-500">
               Event Date:{" "}
             </span>
-            <span style={{ font: "" }}>17 February 2024</span>
+            <span style={{ font: "" }} className="font-bold">
+              17 February 2024
+            </span>
           </motion.div>
 
           <Countdown />
