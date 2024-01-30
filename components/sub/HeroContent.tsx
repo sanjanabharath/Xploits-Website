@@ -36,6 +36,12 @@ const HeroContent = () => {
               alt="xploits logo"
               className="w-96 md:w-full h-auto"
             />
+            {/* <p className="text-lg text-gray-400">
+              National Level Technical Symposium ⚜️
+            </p> */}
+            <p className="text-lg text-gray-400">
+              ⚜️The Department Of Information Technology⚜️
+            </p>
           </div>
 
           <motion.div

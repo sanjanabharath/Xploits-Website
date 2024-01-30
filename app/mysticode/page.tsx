@@ -63,7 +63,7 @@ const Paper = () => {
             Important Dates
           </h3>
           <p className="text-white leading-8 text-lg">
-            Late Day for Registeration - 16/2/2024
+            Last Date for Registeration - 16/2/2024
           </p>
         </div>
       </div>

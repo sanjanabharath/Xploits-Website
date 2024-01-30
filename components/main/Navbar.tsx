@@ -27,9 +27,11 @@ const Navbar = () => {
             <a href="#home" className="cursor-pointer">
               Home
             </a>
+
             <a href="#events" className="cursor-pointer">
               Events
             </a>
+
             <a href="#contact" className="cursor-pointer">
               Contact Us
             </a>
@@ -64,6 +66,7 @@ const Navbar = () => {
             <a href="#home" className="py-2">
               Home
             </a>
+
             <a href="#events" className="py-2">
               Events
             </a>

@@ -2,7 +2,10 @@ const Department = () => {
   return (
     <div className="flex justify-center ">
       <div className="border rounded-lg border-[#2A0E61] mt-20 z-20 w-9/12 shadow-2xl shadow-[#2A0E61] bg-[#03001417] ">
-        <div className="flex flex-col items-center justify-center sm:mt-160">
+        <div
+          className="flex flex-col items-center justify-center sm:mt-160"
+          id="#about"
+        >
           <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-10">
             Department
           </h1>
