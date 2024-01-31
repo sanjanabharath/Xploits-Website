@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full h-[85px] fixed top-0  backdrop-blur-md z-[50] px-10">
+    <div className="w-full h-[85px] top-0  backdrop-blur-md z-[50] px-7">
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[5px]">
         <a href="#home" className="h-auto w-auto flex items-center">
           <span className="flex justify-center">
