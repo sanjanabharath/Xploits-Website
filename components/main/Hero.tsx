@@ -3,7 +3,7 @@ import HeroContent from "../sub/HeroContent";
 
 const Hero = () => {
   return (
-    <div className="relative flex flex-row h-full w-full" id="home">
+    <div className="relative flex flex-row h-full w-full z-[-10]" id="home">
       <HeroContent />
     </div>
   );
