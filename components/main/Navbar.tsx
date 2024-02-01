@@ -61,7 +61,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden w-full mt-4">
+        <div className="md:hidden w-full mt-4 z-[50]">
           <div className="flex flex-col items-center bg-[#0300145e] rounded-md text-gray-200">
             <a href="#home" className="py-2">
               Home
