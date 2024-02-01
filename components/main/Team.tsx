@@ -18,7 +18,7 @@ const Team = () => {
             description="President"
           />
           <Card src="/subha.png" title="Subhalakshmi" description="Secretary" />
-          <Card src="/lokesh.png" title="Lokesh" description="Vice President" />
+          <Card src="/lok.png" title="Lokesh" description="Vice President" />
           <Card
             src="/charan.png"
             title="Charan"

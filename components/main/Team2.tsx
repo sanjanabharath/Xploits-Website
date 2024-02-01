@@ -26,7 +26,7 @@ const Team2 = () => {
       description: "Secretary",
     },
     {
-      src: "/lokesh.png",
+      src: "/lok.png",
       title: "Lokesh",
       description: "Vice President",
     },
