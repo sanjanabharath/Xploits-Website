@@ -17,7 +17,7 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-col justify-center md:flex-row items-center mt-20 w-full z-[20]"
+      className="flex flex-col justify-center md:flex-row items-center mt-20 w-full z-[-10]"
     >
       <div
         className="flex flex-col justify-center md:flex-row items-center text-center"
@@ -32,31 +32,32 @@ const HeroContent = () => {
         <motion.div className="text-lg text-gray-400 my-5 mx-20 flex flex-col">
           <div className="max-w-screen-lg mx-auto">
             <img
-              src="/xploits.png"
+              src="/xploits24logo.png"
               alt="xploits logo"
-              className="w-96 md:w-full h-auto"
+              className="w-96 my-8 md:w-full h-auto"
             />
             {/* <p className="text-lg text-gray-400">
               National Level Technical Symposium ⚜️
             </p> */}
-            <p className="text-lg text-gray-400">
-              ⚜️The Department Of Information Technology⚜️
-            </p>
+
+            <motion.div
+              variants={slideInFromRight(0.5)}
+              className="gap-6 mt-6 text-2xl  text-white max-w-[600px] w-auto h-auto "
+            >
+              <p className="text-lg text-gray-400 my-8">
+                ⚜️The Department Of Information Technology⚜️
+              </p>
+
+              <span className="text-transparent bg-clip-text bg-gradient-to-r font-bold from-purple-500 to-cyan-500">
+                Event Date:{" "}
+              </span>
+              <span style={{ font: "" }} className="font-bold">
+                17 February 2024
+              </span>
+            </motion.div>
+            <Countdown />
           </div>
 
-          <motion.div
-            variants={slideInFromRight(0.5)}
-            className="gap-6 mt-6 text-2xl  text-white max-w-[600px] w-auto h-auto "
-          >
-            <span className="text-transparent bg-clip-text bg-gradient-to-r font-bold from-purple-500 to-cyan-500">
-              Event Date:{" "}
-            </span>
-            <span style={{ font: "" }} className="font-bold">
-              17 February 2024
-            </span>
-          </motion.div>
-
-          <Countdown />
           <motion.div
             variants={slideInFromRight(0.5)}
             className="flex-col mt-10 font-bold text-white w-auto h-auto "
