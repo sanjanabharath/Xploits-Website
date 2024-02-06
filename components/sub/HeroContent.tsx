@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { Suspense } from "react";
 import { motion } from "framer-motion";
 import { slideInFromLeft, slideInFromRight } from "@/utils/motion";
@@ -14,6 +14,11 @@ import Main from "./Main";
 
 const HeroContent = () => {
   const launchDate = new Date("2024-02-17T00:00:00Z");
+  const [loaded, setLoaded] = useState(false);
+
+  const handleLoad = () => {
+    setLoaded(true);
+  };
 
   return (
     <motion.div
@@ -25,13 +30,16 @@ const HeroContent = () => {
         className="flex flex-col justify-center md:flex-row items-center text-center"
         suppressHydrationWarning
       >
-        <Suspense fallback={<CircularProgress />}>
+        {loaded ? (
           <Image
             src={mainLogo}
             alt="work icons"
             className="w-[540px] md:w-[700px]"
+            onLoad={handleLoad}
           />
-        </Suspense>
+        ) : (
+          <CircularProgress />
+        )}
 
         <motion.div className="text-lg text-gray-400 my-5 mx-20 flex flex-col items-center">
           <div className="max-w-screen-lg mx-auto">
