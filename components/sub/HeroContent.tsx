@@ -10,7 +10,7 @@ import EventStarts from "../main/EventStarts";
 import mainLogo from "../assets/main.png";
 import DailogBox from "../sub/DailogBox";
 import Image from "next/image";
-import { useRouter } from "next/router";
+import Main from "./Main";
 
 const HeroContent = () => {
   const launchDate = new Date("2024-02-17T00:00:00Z");
@@ -19,7 +19,7 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-col justify-center md:flex-row items-center mt-20 w-full z-[-10]"
+      className="flex flex-col justify-center md:flex-row items-center mt-20 w-full"
     >
       <div
         className="flex flex-col justify-center md:flex-row items-center text-center"
@@ -33,7 +33,7 @@ const HeroContent = () => {
           />
         </Suspense>
 
-        <motion.div className="text-lg text-gray-400 my-5 mx-20 flex flex-col">
+        <motion.div className="text-lg text-gray-400 my-5 mx-20 flex flex-col items-center">
           <div className="max-w-screen-lg mx-auto">
             <Suspense fallback={<CircularProgress />}>
               <img
@@ -66,7 +66,7 @@ const HeroContent = () => {
 
           <motion.div
             variants={slideInFromRight(0.5)}
-            className="flex-col mt-10 font-bold text-white w-auto h-auto "
+            className="flex-col mt-10 font-bold text-white w-auto h-auto z-[50]"
           >
             <DailogBox />
             <motion.a

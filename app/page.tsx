@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <main className="h-full w-full overflow-x-hidden">
+      <main className="h-full w-full overflow-x-hidden z-[30]">
         <div className="flex flex-col justify-center items-center">
           <Hero />
           <Department />

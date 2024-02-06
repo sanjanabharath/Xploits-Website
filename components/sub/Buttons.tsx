@@ -8,7 +8,7 @@ const Buttons = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center mt-20 w-full z-[20]"
+      className="flex flex-row items-center mt-20 w-full z-[70]"
     >
       <motion.div
         variants={slideInFromRight(0.5)}

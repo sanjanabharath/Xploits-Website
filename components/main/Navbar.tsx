@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import Menu from "../sub/Menu";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -39,7 +40,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="mt-8 md:hidden">
+        {/* <div className="mt-8 md:hidden md:z-[80]">
           <button onClick={toggleMobileMenu}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -56,26 +57,11 @@ const Navbar = () => {
               />
             </svg>
           </button>
-        </div>
+        </div> */}
       </div>
 
       {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden w-full mt-4 z-[50]">
-          <div className="flex flex-col items-center bg-[#0300145e] rounded-md text-gray-200">
-            <a href="#home" className="py-2">
-              Home
-            </a>
-
-            <a href="#events" className="py-2">
-              Events
-            </a>
-            <a href="#contact" className="py-2">
-              Contact Us
-            </a>
-          </div>
-        </div>
-      )}
+      {/* {isMobileMenuOpen && <Menu />} */}
     </div>
   );
 };
