@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { Suspense } from "react";
 import { motion } from "framer-motion";
 import { slideInFromLeft, slideInFromRight } from "@/utils/motion";
 import Countdown from "../main/Countdown";
@@ -23,22 +24,26 @@ const HeroContent = () => {
         className="flex flex-col justify-center md:flex-row items-center text-center"
         suppressHydrationWarning
       >
-        <Image
-          src={mainLogo}
-          alt="work icons"
-          className="w-[540px] md:w-[700px]"
-        />
+        <Suspense fallback={<p>Loading...</p>}>
+          <Image
+            src={mainLogo}
+            alt="work icons"
+            className="w-[540px] md:w-[700px]"
+          />
+        </Suspense>
 
         <motion.div className="text-lg text-gray-400 my-5 mx-20 flex flex-col">
           <div className="max-w-screen-lg mx-auto">
-            <img
-              src="/xploits24logo.png"
-              alt="xploits logo"
-              className="w-96 my-8 md:w-full h-auto"
-            />
-            {/* <p className="text-lg text-gray-400">
+            <Suspense fallback={<p>Loading...</p>}>
+              <img
+                src="/xploits24logo.png"
+                alt="xploits logo"
+                className="w-96 my-8 md:w-full h-auto"
+              />
+              {/* <p className="text-lg text-gray-400">
               National Level Technical Symposium ⚜️
             </p> */}
+            </Suspense>
 
             <motion.div
               variants={slideInFromRight(0.5)}
