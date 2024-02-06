@@ -30,16 +30,17 @@ const HeroContent = () => {
         className="flex flex-col justify-center md:flex-row items-center text-center"
         suppressHydrationWarning
       >
-        {loaded ? (
-          <Image
-            src={mainLogo}
-            alt="work icons"
-            className="w-[540px] md:w-[700px]"
-            onLoad={handleLoad}
-          />
+        <Image
+          src={mainLogo}
+          alt="work icons"
+          className="w-[540px] md:w-[700px]"
+          onLoad={handleLoad}
+        />
+        {/* {loaded ? (
+          
         ) : (
           <CircularProgress />
-        )}
+        )} */}
 
         <motion.div className="text-lg text-gray-400 my-5 mx-20 flex flex-col items-center">
           <div className="max-w-screen-lg mx-auto">
