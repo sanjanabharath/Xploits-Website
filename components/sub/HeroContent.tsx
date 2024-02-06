@@ -18,6 +18,7 @@ const HeroContent = () => {
 
   const handleLoad = () => {
     setLoaded(true);
+    <CircularProgress />;
   };
 
   return (
@@ -36,6 +37,7 @@ const HeroContent = () => {
           className="w-[540px] md:w-[700px]"
           onLoad={handleLoad}
         />
+
         {/* {loaded ? (
           
         ) : (
@@ -69,23 +71,22 @@ const HeroContent = () => {
               <span style={{ font: "" }} className="font-bold">
                 17 February 2024
               </span>
+              <Countdown />
+              <motion.div
+                variants={slideInFromRight(0.5)}
+                className="flex-col mt-10 font-bold text-white w-auto h-auto z-[50]"
+              >
+                <DailogBox />
+                <motion.a
+                  variants={slideInFromLeft(1)}
+                  className="p-3 button-primary text-center text-white cursor-pointer rounded-lg max-w-[400px] mx-3"
+                  href="#events"
+                >
+                  Events!
+                </motion.a>
+              </motion.div>
             </motion.div>
-            <Countdown />
           </div>
-
-          <motion.div
-            variants={slideInFromRight(0.5)}
-            className="flex-col mt-10 font-bold text-white w-auto h-auto z-[50]"
-          >
-            <DailogBox />
-            <motion.a
-              variants={slideInFromLeft(1)}
-              className="p-3 button-primary text-center text-white cursor-pointer rounded-lg max-w-[400px] mx-3"
-              href="#events"
-            >
-              Events!
-            </motion.a>
-          </motion.div>
         </motion.div>
       </div>
     </motion.div>

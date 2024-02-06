@@ -7,6 +7,8 @@ import Department from "@/components/main/Department";
 import College from "@/components/main/College";
 import Team2 from "@/components/main/Team2";
 import Conveners from "@/components/main/Conveners";
+import { Suspense } from "react";
+import Loading from "./Loading";
 
 export default function Home() {
   return (
@@ -14,7 +16,10 @@ export default function Home() {
       <Navbar />
       <main className="h-full w-full overflow-x-hidden z-[30]">
         <div className="flex flex-col justify-center items-center">
-          <Hero />
+          <Suspense fallback={<Loading />}>
+            <Hero />
+          </Suspense>
+
           <Department />
           <College />
           <ImageSlider />
