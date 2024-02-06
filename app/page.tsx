@@ -16,9 +16,7 @@ export default function Home() {
       <Navbar />
       <main className="h-full w-full overflow-x-hidden z-[30]">
         <div className="flex flex-col justify-center items-center">
-          <Suspense fallback={<Loading />}>
-            <Hero />
-          </Suspense>
+          <Hero />
 
           <Department />
           <College />
