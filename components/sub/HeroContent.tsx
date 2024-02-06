@@ -4,6 +4,7 @@ import React from "react";
 import { Suspense } from "react";
 import { motion } from "framer-motion";
 import { slideInFromLeft, slideInFromRight } from "@/utils/motion";
+import CircularProgress from "@mui/material/CircularProgress";
 import Countdown from "../main/Countdown";
 import EventStarts from "../main/EventStarts";
 import mainLogo from "../assets/main.png";
@@ -24,7 +25,7 @@ const HeroContent = () => {
         className="flex flex-col justify-center md:flex-row items-center text-center"
         suppressHydrationWarning
       >
-        <Suspense fallback={<p>Loading...</p>}>
+        <Suspense fallback={<CircularProgress />}>
           <Image
             src={mainLogo}
             alt="work icons"
@@ -34,7 +35,7 @@ const HeroContent = () => {
 
         <motion.div className="text-lg text-gray-400 my-5 mx-20 flex flex-col">
           <div className="max-w-screen-lg mx-auto">
-            <Suspense fallback={<p>Loading...</p>}>
+            <Suspense fallback={<CircularProgress />}>
               <img
                 src="/xploits24logo.png"
                 alt="xploits logo"
