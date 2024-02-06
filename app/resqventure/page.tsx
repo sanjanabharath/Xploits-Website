@@ -2,7 +2,7 @@ import Image from "next/image";
 import sample from "@/public/1.png";
 import Grid from "@mui/material/Grid";
 import { IoIosCall, IoIosMail } from "react-icons/io";
-import three from "../../components/assets/event-3.png";
+import three from "../../public/rules-3.png";
 import Back from "../../components/sub/Back";
 const Paper = () => {
   return (

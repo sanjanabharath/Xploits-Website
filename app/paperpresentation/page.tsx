@@ -1,5 +1,5 @@
 import Image from "next/image";
-import sample from "../../components/assets/event-1.png";
+import sample from "../../public/rules-1.png";
 import Grid from "@mui/material/Grid";
 import { IoIosCall, IoIosMail } from "react-icons/io";
 import Back from "../../components/sub/Back";
@@ -63,10 +63,10 @@ const Paper = () => {
             Important Dates
           </h3>
           <p className="text-white leading-8 text-lg">
-            Last Date for Submission of Abstract - 12/2/2024
+            Last Date for Submission of Abstract - 15/2/2024
           </p>
           <p className="text-white leading-8 text-lg">
-            Last Date for Submission of PPT and paper - 15/2/2024
+            Last Date for Submission of PPT and paper - 16/2/2024
           </p>
           <h3 className="py-3 text-[30px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 ">
             Submit your materials
